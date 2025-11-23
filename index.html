@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <script>
+        alert("Hello Students")
+        alert("Welcome to the Result day")
+    </script>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(45, 201, 6);
+        }
+    </style>
+    
+    <h1>Results of students</h1>
+    
+    <script>
+    
+        // Taking marks input for 5 subjects
+let sub1 =Number(prompt("Enter marks for Subject 1:"));
+let sub2 =Number (prompt("Enter marks for Subject 2:"));
+let sub3 = Number(prompt("Enter marks for Subject 3:"));
+let sub4 = Number(prompt("Enter marks for Subject 4:"));
+let sub5 =Number ( prompt("Enter marks for Subject 5:"));
+
+// Calculating total and average
+let total = sub1 + sub2 + sub3 + sub4 + sub5;
+let average = total / 5;
+
+// Finding grade using if-else statements
+ let grade;
+
+if (average >= 90) {
+    grade = "A+";
+    document.write("<h2>Pass"+"</br>");
+    console.log("Distinction")
+    alert("Congratulations")
+    
+} else if (average >= 80) {
+    grade = "A";
+    console.log("First Class")
+    document.write("<h2>Pass"+"</br>");
+        alert("Excellent")
+
+} else if (average >= 70) {
+    grade = "B";
+    console.log("Good")
+    document.write("<h2>Pass"+"</br>");
+        alert("Very Good")
+    
+} else if (average >= 60) {
+    grade = "C";
+    console.log("Bad")
+    document.write("<h2>Fail"+"</br>");
+        alert("Work hard ")
+    
+} else if (average >= 50) {
+    grade = "D";
+    console.log("Do it better")
+    document.write("<h2>Fail"+"</br>");
+        alert("Give Your Best ")
+        
+    
+} else {
+    grade = "F";
+    console.log("Failed")
+    document.write("<h2>Fail"+"</br>");
+        alert("Try More!! ")
+}
+
+// Displaying result
+document.write("Total Marks = " + total +"</br>");
+ document.write ("Average Marks = " + average +"</br>");
+  document.write("Grade = " + grade +"</br>");
+  alert("Total Marks = " + total);
+alert("Average Marks = " + average);
+alert("Grade = " + grade);
+  
+</script>
+</body>
+</html>
